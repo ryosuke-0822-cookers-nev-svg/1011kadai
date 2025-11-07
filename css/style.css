@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+}
+
+.menu{
+  display: flex;
+  height: 60px;
+  justify-content: flex-end;
+  background-color: cadetblue;
+}
+
+.menu_box{
+  width: 500px;
+  margin-top: 30px; 
+  /* 要素の上に50pxの余白を追加して下にずらす */
+  display: flex;
+  gap: 50px;
+ 
+}
+
+.main_img{
+  text-align: center;
+  width: 100%;
+  height: 850px;
+  overflow: hidden; /* 枠からはみ出した部分を隠す */
+  position: relative;
+}
+
+.main_img img{
+  width: 900px;
+  height: auto;
+}
+
+.imgs{
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  
+}
+
+.imgs img{
+  width: 200px; 
+  height: auto;
+}
+
+.title{
+  display: flex;
+  gap: 200px;
+  justify-content: center;
+}
+
+.sub_imags1{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  justify-content: center;
+}
+
+.sub_imags1 img{
+  width: 50px;
+  justify-content: center;
+  height: auto;
+  display: block;
+}
